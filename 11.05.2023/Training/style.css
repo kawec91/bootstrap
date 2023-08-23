@@ -1,0 +1,52 @@
+/*  */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+header ol {
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+main {
+    min-height: 100vh
+}
+
+main a {
+    text-decoration: none;
+}
+
+.my-sidebar-wrapper {
+    display: flex;
+    margin-left: 45px;
+}
+
+
+
+.my-rotate {
+    position: absolute;
+    top: 100px;
+    left: 2px;
+}
+
+.content-wrapper {
+    margin-left: 15px;
+    width: 100%;
+}
+
+.pink-color {
+    background-color: palevioletred;
+}
+
+footer {
+    border-top: 1px solid black;
+}

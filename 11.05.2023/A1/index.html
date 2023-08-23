@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Style-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Mobile-->
+    <link rel="stylesheet" href="mobile.css" />
+    <!--Tablet-->
+    <link rel="stylesheet" href="tablet.css" />
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!--Header-->
+    <!--Navbar-->
+    <header class="navbar bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img src="../assets/img/logo.png" alt=""
+        /></a>
+        <ul class="d-none d-lg-flex">
+          <li><a href="#">Startsite</a></li>
+          <li><a href="#">Über mich</a></li>
+          <li><a href="#">Skill</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+        <!--Navbutton-->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--OffCanvas-->
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <!--Titile-->
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SideBar</h5>
+            <!--Button-->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!--OffCanvas Body-->
+          <div class="offcanvas-body">
+            <div class="search-box d-flex align-items-center">
+              <!--Icon-->
+              <i class="bi bi-search"></i>
+              <!--Search-->
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+            <!--LinkMenu-->
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <!--ListItem-->
+              <li class="nav-item">
+                <a
+                  class="nav-link active d-flex gap-3"
+                  aria-current="page"
+                  href="#"
+                >
+                  <i class="bi bi-envelope position-relative my-nav-icon"> </i>
+                  <p>Message <span class="badge text-bg-secondary">4</span></p>
+                </a>
+              </li>
+              <!--ListItem-->
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-3" href="#">
+                  <i class="bi bi-gear"></i>
+                  <p>Einstellung</p>
+                </a>
+              </li>
+              <!--ListItem-->
+              <li class="nav-item">
+                <a class="nav-link d-flex gap-3" href="#">
+                  <i class="bi bi-box-arrow-in-left"></i>
+                  <p>Ausloggen</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-box">
+        <!-- The sidebar -->
+        <div class="sidebar">
+          <!--Anchor -->
+          <a class="active" href="#home">
+            <div class="sidebar-search d-flex align-items-center gap-3">
+              <!--Icon-->
+              <i class="bi bi-search"></i>
+              <!--Search-->
+              <form class="d-flex mt-3" role="search">
+                <input
+                  class="form-control me-2 d-none d-lg-block"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+            </div>
+          </a>
+          <!--Anchor-->
+          <a href="#msg">
+            <div class="sidebar-message d-flex gap-3">
+              <i class="bi bi-envelope position-relative my-nav-icon"> </i>
+              <p class="d-none d-lg-block">
+                Message <span class="badge text-bg-secondary">4</span>
+              </p>
+            </div>
+          </a>
+          <!--Anchor-->
+          <a href="#settings"
+            ><div class="sidebox-settings d-flex gap-3">
+              <i class="bi bi-gear"></i>
+              <p class="d-none d-lg-block">Einstellung</p>
+            </div></a
+          >
+          <!--Anchor-->
+          <a href="#logout">
+            <div class="sidebox-logout d-flex gap-3">
+              <i class="bi bi-box-arrow-in-left"></i>
+              <p class="d-none d-lg-block">Ausloggen</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Page content -->
+        <div class="content">
+          <!--Title Row-->
+          <div class="row title">
+            <!--Title-->
+            <div
+              class="col-12 d-flex justify-content-center align-items-center bg-warning"
+            >
+              TITEL
+            </div>
+          </div>
+          <!--2 Col Row-->
+          <div class="row bg-info">
+            <!--Col 1-->
+            <div class="col-md-12 col-lg d-flex justify-content-center pt-2">
+              <!--Collapse Box-->
+              <div class="collapse-box">
+                <!--Button-->
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Collapse 1
+                </button>
+                <!--Content-->
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    1Some placeholder content for the collapse component. This
+                    panel is hidden by default but revealed when the user
+                    activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+              <!--Collapse Box-->
+              <div class="collapse-box">
+                <!--Button-->
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample2"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Collapse 2
+                </button>
+                <!--Content-->
+                <div class="collapse" id="collapseExample2">
+                  <div class="card card-body">
+                    2Some placeholder content for the collapse component. This
+                    panel is hidden by default but revealed when the user
+                    activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+              <!--Collapse Box-->
+              <div class="collapse-box">
+                <!--Button-->
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseExample3"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Collapse 3
+                </button>
+                <!--Content-->
+                <div class="collapse" id="collapseExample3">
+                  <div class="card card-body">
+                    3Some placeholder content for the collapse component. This
+                    panel is hidden by default but revealed when the user
+                    activates the relevant trigger.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Col 2-->
+            <div class="col-md-12 col-lg bg-info">
+              <!--Accordion-->
+              <div class="accordion" id="accordionExample">
+                <!--Accordion Item-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong>
+                      It is shown by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <!--Accordion Item-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <!--Accordion Item-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong>
+                      It is hidden by default, until the collapse plugin adds
+                      the appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--5 Col Row-->
+          <div class="row">
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-browser-chrome main-row-icons"></i>
+              <!--Text-->
+              <p>Browser Chrome</p>
+            </div>
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-browser-edge main-row-icons"></i>
+              <!--Text-->
+              <p>Browser Edge</p>
+            </div>
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-browser-firefox main-row-icons"></i>
+              <!--Text-->
+              <p>Browser Firefox</p>
+            </div>
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-bootstrap-fill main-row-icons"></i>
+              <!--Text-->
+              <p>Bootstrap fill</p>
+            </div>
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-browser-safari main-row-icons"></i>
+              <!--Text-->
+              <p>Browser Safari</p>
+            </div>
+          </div>
+          <!--5 Col Row-->
+          <div class="row">
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-coin main-row-icons"></i>
+              <!--Text-->
+              <p>Coin</p>
+            </div>
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-compass main-row-icons"></i>
+              <!--Text-->
+              <p>Compass</p>
+            </div>
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-credit-card main-row-icons"></i>
+              <!--Text-->
+              <p>Credit card</p>
+            </div>
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-cpu main-row-icons"></i>
+              <!--Text-->
+              <p>CPU</p>
+            </div>
+            <div
+              class="col-md-4 col-lg pink-color d-flex flex-column align-items-center"
+            >
+              <!--Icon-->
+              <i class="bi bi-controller main-row-icons"></i>
+              <!--Text-->
+              <p>Controller</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer class="d-flex justify-content-end bg-success">
+      <!--Instagram-->
+      <i class="bi bi-instagram"></i>
+      <!--Twitter-->
+      <i class="bi bi-twitter"></i>
+      <!--Facebook-->
+      <i class="bi bi-facebook"></i>
+    </footer>
+  </body>
+</html>
