@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Settings | Einstellungen -->
+  <head>
+    <!-- Character Set | Zeichensatz -->
+    <meta charset="UTF-8" />
+    <!-- Mobile Devices Settings for IE | Mobiles Gerät Darstellungsoptimierung speziell für Microsoft IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Devices Settings | Mobiles Gerät Darstellungsoptimierung -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- General CSS settings | Allgemeiner CSS-Code -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS for small Screens | CSS-Code speziell für kleine Bildschirme (Handy, Tablet) -->
+    <link rel="stylesheet" href="mobile.css" />
+    <!-- CSS for big Screens| CSS-Code speziell für große Bildschirme (PC, Mac) -->
+    <link rel="stylesheet" href="desktop.css" />
+    <!-- Bootstrap -->
+    <!-- CDN into <head> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!--Title | Titel der Seite -->
+    <title>Document</title>
+  </head>
+  <!-- Body | Inhaltbereich -->
+  <body>
+    <!-- Header | Kopfzeile -->
+    <header>
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-success">
+        <!--Container for Margin Left-->
+        <div class="container">
+          <!--Brand Name-->
+          <a href="#" class="navbar-brand text-primary">Frontend Bootcamp</a>
+          <!--Button on Small Screen-->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--Menu-->
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+              <!--Nav Item-->
+              <li class="nav-item">
+                <a href="#learn" class="nav-link text-primary"
+                  >Learning resources</a
+                >
+              </li>
+              <!--Nav Item-->
+              <li class="nav-item">
+                <a href="#que" class="nav-link text-primary">Questions</a>
+              </li>
+              <!--Nav Item-->
+              <li class="nav-item">
+                <a href="#mentors" class="nav-link text-primary">Mentors</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main | Inhalt -->
+    <main>
+      <!--Section 1-->
+      <section class="bg-dark">
+        <!--Container-->
+        <div class="container py-5">
+          <div class="d-sm-flex">
+            <!--Text-->
+            <div
+              class="text-light d-flex flex-column justify-content-center align-items-start"
+            >
+              <!--Title-->
+              <h1 class="mb-3">
+                Become <span class="text-warning">FRONTEND ENGINNER</span>
+              </h1>
+              <!--Text-->
+              <p class="lead">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus
+                culpa excepturi voluptas facilis modi suscipit at in iure
+                delectus blanditiis est, sunt repellat beatae a? Cupiditate modi
+                necessitatibus dolor dolorem.
+              </p>
+              <!--Button-->
+              <button class="btn btn-primary mb-3">Enroll Now</button>
+            </div>
+            <!--IMG-->
+            <div class="">
+              <img
+                src="./assets/img/programmer-g1461ff915_1280.png"
+                class="first-img"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 2-->
+      <section class="bg-primary">
+        <!--Container-->
+        <div class="container py-5 d-sm-flex">
+          <!--Title-->
+          <h3 class="text-light">Sign up for our newsletter</h3>
+          <!--Mail & Button-->
+          <div class="input-group mb-3">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+            />
+            <button class="btn btn-dark" type="button" id="button-email">
+              Sign up
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 3-->
+      <section>
+        <!--Container-->
+        <div class="container">
+          <div class="row my-5 g-3">
+            <!--Col 1-->
+            <div class="col-md">
+              <!--Card-->
+              <div class="card bg-dark text-light text-center">
+                <!--Card Body-->
+                <div class="card-body">
+                  <!--Card Icon-->
+                  <h1>
+                    <i class="bi bi-laptop"></i>
+                  </h1>
+                  <!--Card Title-->
+                  <h5 class="card-title">Virtual class</h5>
+                  <!--Card Text-->
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat nostrum rem voluptas vitae assumenda velit.
+                  </p>
+                  <!--Card Button-->
+                  <a href="#" class="btn btn-primary bg-info">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <!--Col 2-->
+            <div class="col-md">
+              <!--Card-->
+              <div class="card bg-secondary text-light text-center">
+                <!--Card Body-->
+                <div class="card-body">
+                  <!--Card Icon-->
+                  <h1>
+                    <i class="bi bi-person-square"></i>
+                  </h1>
+                  <!--Card Title-->
+                  <h5 class="card-title">Hybrid class</h5>
+                  <!--Card Text-->
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat nostrum rem voluptas vitae assumenda velit.
+                  </p>
+                  <!--Card Button-->
+                  <a href="#" class="btn btn-primary bg-info">Learn more</a>
+                </div>
+              </div>
+            </div>
+            <!--Col 3-->
+            <div class="col-md">
+              <!--Card-->
+              <div class="card bg-dark text-light text-center">
+                <!--Card Body-->
+                <div class="card-body">
+                  <!--Card Icon-->
+                  <h1>
+                    <i class="bi bi-people"></i>
+                  </h1>
+                  <!--Card Title-->
+                  <h5 class="card-title">Offline class</h5>
+                  <!--Card Text-->
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat nostrum rem voluptas vitae assumenda velit.
+                  </p>
+                  <!--Card Button-->
+                  <a href="#" class="btn btn-primary bg-info">Learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 4-->
+      <section id="learn">
+        <!--Container-->
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-md">
+              <!--Image-->
+              <img
+                src="./assets/img/web-ga27707af5_1280.jpg"
+                alt=""
+                class="first-img"
+              />
+            </div>
+            <div
+              class="col-md d-flex flex-column justify-content-center align-items-start"
+            >
+              <!--Title-->
+              <h3>Learn Fundamental Knowledge</h3>
+              <!--Text Part 1-->
+              <p class="lead text-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                asperiores dicta repellat explicabo praesentium similique.
+              </p>
+              <!--Text Part 2-->
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Pariatur, odio. Non nostrum enim repudiandae sapiente molestiae
+                ad rem illo corporis, tempore, eligendi iste soluta fuga minus
+                culpa officia adipisci consectetur?
+              </p>
+              <!--Button-->
+              <a href="" class="btn btn-dark">Read more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 5-->
+      <section class="bg-dark py-5">
+        <!--Container-->
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md d-flex flex-column justify-content-center align-items-start"
+            >
+              <!--Title-->
+              <h1 class="text-light">Learn ReactJS</h1>
+              <!--Text Part 1-->
+              <h4 class="text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                asperiores dicta repellat explicabo praesentium similique.
+              </h4>
+              <!--Text Part 2-->
+              <p class="text-light my-3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Pariatur, odio. Non nostrum enim repudiandae sapiente molestiae
+                ad rem illo corporis, tempore, eligendi iste soluta fuga minus
+                culpa officia adipisci consectetur?
+              </p>
+              <!--Button-->
+              <a href="" class="btn btn-dark">Read more</a>
+            </div>
+            <div class="col-md">
+              <!--Image-->
+              <img
+                src="./assets/img/web-ga27707af5_1280.jpg"
+                alt=""
+                class="first-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Section 6-->
+      <section>
+        <!--Container-->
+        <div class="container py-5">
+          <!--Section Title-->
+          <h3 class="text-center">Frequently Asked Questions</h3>
+          <!--Accordion-->
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <!--Accordion Item 1-->
+            <div class="accordion-item">
+              <!--Accordion Header-->
+              <h2 class="accordion-header">
+                <!--Accordion Button-->
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Where are we located?
+                </button>
+                <!--End Button-->
+              </h2>
+              <!--End Accordion Header-->
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <!--Accordion Body-->
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+            <!--End Accordion Item 1-->
+            <!--Accordion Item 2-->
+            <div class="accordion-item">
+              <!--Accordion Header-->
+              <h2 class="accordion-header">
+                <!--Accordion Button-->
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  How much does it cost to enroll?
+                </button>
+                <!--End Button-->
+              </h2>
+              <!--End Accordion Header-->
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <!--Accordion Body-->
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the second item's accordion body. Let's imagine this being
+                  filled with some actual content.
+                </div>
+              </div>
+            </div>
+            <!--End Accordion Item 2-->
+            <!--Accordion Item 3-->
+            <div class="accordion-item">
+              <!--Accordion Header-->
+              <h2 class="accordion-header">
+                <!--Accordion Button-->
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  What is my prerequisite?
+                </button>
+                <!--End Button-->
+              </h2>
+              <!--End Accordion Header-->
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <!--Accordion Body-->
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <!--End Accordion Item 3-->
+            <!--Accordion Item 4-->
+            <div class="accordion-item">
+              <!--Accordion Header-->
+              <h2 class="accordion-header">
+                <!--Accordion Button-->
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  How do I sign up?
+                </button>
+                <!--End Button-->
+              </h2>
+              <!--End Accordion Header-->
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <!--Accordion Body-->
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <!--End Accordion Item 4-->
+            <!--Accordion Item 5-->
+            <div class="accordion-item">
+              <!--Accordion Header-->
+              <h2 class="accordion-header">
+                <!--Accordion Button-->
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  Does it help me find a good career?
+                </button>
+                <!--End Button-->
+              </h2>
+              <!--End Accordion Header-->
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <!--Accordion Body-->
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+            <!--End Accordion Item 5-->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer | Fußzeile -->
+    <footer>
+      <div class="container py-5">
+        <!--Social Media-->
+        <div
+          class="footer-social-icons-wrapper d-flex justify-content-between align-items-center"
+        >
+          <!--FB-->
+          <img src="./assets/img/social-media/icons8-facebook-48.png" alt="" />
+          <!--Git-->
+          <img src="./assets/img/social-media/icons8-github-48.png" alt="" />
+          <!--Twitter-->
+          <img src="./assets/img/social-media/icons8-twitter-48.png" alt="" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
